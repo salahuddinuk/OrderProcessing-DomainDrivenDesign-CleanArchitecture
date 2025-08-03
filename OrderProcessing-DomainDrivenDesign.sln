@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35828.75
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderProcessing.Domain", "OrderProcessing.Domain\OrderProcessing.Domain.csproj", "{75A9534D-28E2-4FD9-99AC-E324DFED76B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderProcessing.Application", "OrderProcessing.Application\OrderProcessing.Application.csproj", "{F0039EF5-9E44-4B74-9578-D43F9F94FA59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderProcessing.Infrastructure", "OrderProcessing.Infrastructure\OrderProcessing.Infrastructure.csproj", "{B4196F90-2B25-4C94-8B6C-80889838A22C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderProcessing.Api", "OrderProcessing.Api\OrderProcessing.Api.csproj", "{ACDDF6C1-C065-42CF-A27F-DD448221DAFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderProcessing.Tests.Unit", "OrderProcessing.Tests\OrderProcessing.Tests.Unit.csproj", "{CE1B5293-E9D8-422B-8FD0-63BE4BA9C586}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderProcessing.Tests.Integration", "OrderProcessing.Tests.Integration\OrderProcessing.Tests.Integration.csproj", "{D1BFCC77-0BC4-4640-ACC0-CC41A8779C0B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.md = Readme.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75A9534D-28E2-4FD9-99AC-E324DFED76B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75A9534D-28E2-4FD9-99AC-E324DFED76B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75A9534D-28E2-4FD9-99AC-E324DFED76B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75A9534D-28E2-4FD9-99AC-E324DFED76B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0039EF5-9E44-4B74-9578-D43F9F94FA59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0039EF5-9E44-4B74-9578-D43F9F94FA59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0039EF5-9E44-4B74-9578-D43F9F94FA59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0039EF5-9E44-4B74-9578-D43F9F94FA59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4196F90-2B25-4C94-8B6C-80889838A22C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4196F90-2B25-4C94-8B6C-80889838A22C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4196F90-2B25-4C94-8B6C-80889838A22C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4196F90-2B25-4C94-8B6C-80889838A22C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACDDF6C1-C065-42CF-A27F-DD448221DAFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACDDF6C1-C065-42CF-A27F-DD448221DAFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACDDF6C1-C065-42CF-A27F-DD448221DAFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACDDF6C1-C065-42CF-A27F-DD448221DAFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE1B5293-E9D8-422B-8FD0-63BE4BA9C586}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE1B5293-E9D8-422B-8FD0-63BE4BA9C586}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE1B5293-E9D8-422B-8FD0-63BE4BA9C586}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE1B5293-E9D8-422B-8FD0-63BE4BA9C586}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1BFCC77-0BC4-4640-ACC0-CC41A8779C0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1BFCC77-0BC4-4640-ACC0-CC41A8779C0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1BFCC77-0BC4-4640-ACC0-CC41A8779C0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1BFCC77-0BC4-4640-ACC0-CC41A8779C0B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7D22BFDF-5AD2-4CC4-BEAA-8C8C0F180456}
+	EndGlobalSection
+EndGlobal
