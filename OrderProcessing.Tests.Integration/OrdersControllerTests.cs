@@ -11,22 +11,13 @@ namespace OrderProcessing.Tests.Integration
     {
         private readonly HttpClient _client;
 
-        //public OrdersControllerTests(CustomWebApplicationFactory factory)
-        //{
-        //    _client = factory.CreateClient();
-        //}
-
         public OrdersControllerTests(WebApplicationFactory<Program> factory)
         {
             factory = factory.WithWebHostBuilder(builder =>
             {
                 builder.UseEnvironment("Testing");
             });
-            _client = factory.CreateClient();
-            //_client = factory.CreateClient(new WebApplicationFactoryClientOptions
-            //{
-            //    BaseAddress = new Uri("http://localhost:44371") // your desired port
-            //});
+            _client = factory.CreateClient();            
         }
 
         [Fact]
@@ -42,7 +33,7 @@ namespace OrderProcessing.Tests.Integration
             {
                 new CreateOrderItemDto
                 {
-                    //ProductId = Guid.Parse("11111111-1111-1111-1111-111111111111"),
+                    ProductId = Guid.NewGuid(), //Guid.Parse("11111111-1111-1111-1111-111111111111"),
                     ProductName = "Gaming Laptop",
                     Quantity = 1,
                     ProductPrice = 1499.99m
@@ -72,7 +63,7 @@ namespace OrderProcessing.Tests.Integration
                 {
                     new CreateOrderItemDto
                     {
-                        ProductId = Guid.Parse("11111111-1111-1111-1111-111111111111"),
+                        ProductId = Guid.NewGuid(), //Guid.Parse("11111111-1111-1111-1111-111111111111"),
                         ProductName = "Gaming Laptop",
                         Quantity = 1,
                         ProductPrice = 1499.99m
