@@ -6,6 +6,7 @@ using OrderProcessing.Domain.Repositories;
 using OrderProcessing.Domain.ValueObjects;
 using OrderProcessing.Infrastructure.Data;
 using Serilog;
+using System.ComponentModel.DataAnnotations;
 
 namespace OrderProcessing.Application.Services
 {
@@ -42,6 +43,7 @@ namespace OrderProcessing.Application.Services
 
                 var items = new List<OrderItem>();
 
+
                 foreach (var item in orderRequest.Items)
                 {
 
@@ -58,8 +60,17 @@ namespace OrderProcessing.Application.Services
                     //product.Price
                     );
 
+                    if (items.Any(i => i.Product.Equals(productDetail)))
+                    {
+                        _logger.LogWarning("Duplicate product cannot be added to the order.");
+                        throw new ArgumentException("Duplicate product cannot be added to the order.");                        
+                    }
+
                     items.Add(new OrderItem(productDetail, item.Quantity));
                 }
+
+
+               
 
                 var invoiceAddress = new Address(orderRequest.InvoiceAddress);
                 var invoiceEmailAddress = new EmailAddress(orderRequest.InvoiceEmailAddress);
