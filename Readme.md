@@ -28,7 +28,8 @@ OrderProcessing is a .NET 9 Web API for managing customer orders, including orde
 ### Setup
 
 1. **Clone the repository:**
-   git clone https://github.com/salahuddinuk/OrderProcessing-DomainDrivenDesign.git cd OrderProcessing
+   git clone https://github.com/salahuddinuk/OrderProcessing-DomainDrivenDesign-CleanArchitecture.git 
+1. cd OrderProcessing-DomainDrivenDesign-CleanArchitecture
 
 
 2. **Configure the database:**
