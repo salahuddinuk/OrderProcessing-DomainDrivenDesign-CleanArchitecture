@@ -1,6 +1,7 @@
 using FluentValidation;
 using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
+using OrderProcessing.Api.Middleware;
 using OrderProcessing.Application.Services;
 using OrderProcessing.Application.Validators;
 using OrderProcessing.Domain.Repositories;
@@ -84,6 +85,8 @@ if (app.Environment.IsDevelopment())
 //              .AllowAnyHeader()
 //              .AllowAnyMethod());
 //});
+
+app.UseMiddleware<ExceptionHandlingMiddleware>();
 
 //app.UseCors();
 app.UseAuthorization();
